@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  html {
+    scroll-padding-top: 120px;
+    scroll-behavior: smooth;
+  }
+
+  /* Header */
+  #header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 70px;
+
+    background: #182025;
+  }
+
+  #react-icon {
+    position: absolute;
+    width: 45.51px;
+    height: 32px;
+    left: 25px;
+    top: 20px;
+  }
+
+  #header h1 {
+    position: absolute;
+    width: 250px;
+    height: 29px;
+    left: 71px;
+    top: 22px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 29px;
+    color: #E0E7EB;
+  }
+
+  #menu {
+    position: absolute;
+    width: 25px;
+    height: 13px;
+    right: 30px;
+    top: 28px;
+    background: #E0E7EB;
+  }
+
+  #menu::after {
+    content:"";
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 5px;
+    top: 4px;
+    background: #182025;
+  }
+
+  /* Navigation Bar */
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: fixed;
+    overflow: scroll;
+    z-index: 1;
+
+    width: 400px;
+    height: calc(100% - 70px);
+    top: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #E4E6E7;
+  }
+
+  #navbar header,
+  .nav-link {
+    flex-basis: content;
+    position: relative;
+    left: 40px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #202B31;
+  }
+
+  .padding-bottom {
+    padding-bottom: 90px;
+  }
+
+  #navbar header {
+    font-weight: 600;
+  }
+
+  .nav-link::before {
+    content:"";
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+    background: #202B31;
+  }
+
+  /* Main Content */
+  main {
+    position: relative;
+    width: calc(100% - 400px - 280px);
+    left: 400px;
+    top: 70px;
+    padding: 50px 160px 0px 120px;
+    margin-bottom: 120px;
+  }
+
+  main header {
+    padding-bottom: 30px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #202B31;
+  }
+
+  main p,
+  main a {
+    padding-bottom: 30px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #202B31;
+  }
+
+  main ul {
+    position: relative;
+    list-style: square;
+    padding-bottom: 30px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #202B31;
+  }
+
+  .why-jsx-li {
+    position: relative;
+    padding-bottom: 20px;
+    left: 40px;
+  }
+
+  .li-p {
+    position: relative;
+    list-style-type: none;
+    left: 0px;
+  }
+
+  .hidden {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  main a {
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  main pre {
+    position: relative;
+    background: #202B31;
+    border-radius: 15px;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    left: 20px;
+
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #E0E7EB;
+  }
+
+  #footer {
+    position: relative;
+    width: calc(100% - 400px);
+    height: 120px;
+    left: 400px;
+    background: #182025;
+  }
+
+  #footer h1 {
+    position: relative;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 29px;
+    color: #E0E7EB;
+    left: 120px;
+    top: 30px;
+  }
+
+  #footer li {
+    position: absolute;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #E0E7EB;
+    left: 120px;
+    top: 60px;
+
+    list-style-type: none;
+  }
+
+  .ref-link {
+    color: #E0E7EB;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
