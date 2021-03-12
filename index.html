@@ -20,7 +20,7 @@
     <header id="header">
       <img
         id="header-logo"
-        src="https://lh3.googleusercontent.com/yetq0IcjBG6pDg0gx8tAkI86BniQ29BLewz5UzOSJnbarFD_KVir4nLbkMpWZSaIRsMoluJJOO6tvtEmRfK9fJRrF6MI2qZ1PXC2picCAisv1WimaSmhFEQRhnBpHVRNK3mcb9R0Pg=w2400"
+        src="./images/640px-React-icon.svg.png"
       />
       <h1>React Docs</h1>
       <div id="menu"><a href="#menu"></a></div>
@@ -81,8 +81,8 @@
         <code>
           <pre>
 ReactDOM.render(
-&lt;h1&gt;Hello, world!&lt;/h1&gt;,
-document.getElementById('root')
+  &lt;h1&gt;Hello, world!&lt;/h1&gt;,
+  document.getElementById('root')
 );</pre
           >
         </code>
@@ -174,8 +174,8 @@ const name = 'Josh Perez';
 const element = &lt;h1&gt;Hello, {name}&lt;/h1&gt;;
 
 ReactDOM.render(
-element,
-document.getElementById('root')
+  element,
+  document.getElementById('root')
 );</pre
           >
         </code>
@@ -191,23 +191,23 @@ document.getElementById('root')
         <code>
           <pre>
 function formatName(user) {
-return user.firstName + ' ' + user.lastName;
+  return user.firstName + ' ' + user.lastName;
 }
 
 const user = {
-firstName: 'Harper',
-lastName: 'Perez'
+  firstName: 'Harper',
+  lastName: 'Perez'
 };
 
 const element = (
-&lt;h1&gt;
-  Hello, {formatName(user)}!
-&lt;/h1&gt;
+  &lt;h1&gt;
+    Hello, {formatName(user)}!
+  &lt;/h1&gt;
 );
 
 ReactDOM.render(
-element,
-document.getElementById('root')
+  element,
+  document.getElementById('root')
 );</pre
           >
         </code>
@@ -239,10 +239,10 @@ document.getElementById('root')
         <code>
           <pre>
 function getGreeting(user) {
-if (user) {
-  return &lt;h1&gt;Hello, {formatName(user)}!&lt;/h1&gt;;
-}
-return &lt;h1&gt;Hello, Stranger.&lt;/h1&gt;;
+  if (user) {
+    return &lt;h1&gt;Hello, {formatName(user)}!&lt;/h1&gt;;
+  }
+  return &lt;h1&gt;Hello, Stranger.&lt;/h1&gt;;
 }</pre
           >
         </code>
@@ -283,10 +283,10 @@ const element = &lt;img src={user.avatarUrl}&gt;&lt;/img&gt;;</pre
         <code>
           <pre>
 const element = (
-&lt;div&gt;
-  &lt;h1&gt;Hello!&lt;/h1&gt;
-  &lt;h2&gt;Good to see you here.&lt;/h2&gt;
-&lt;/div&gt;
+  &lt;div&gt;
+    &lt;h1&gt;Hello!&lt;/h1&gt;
+    &lt;h2&gt;Good to see you here.&lt;/h2&gt;
+  &lt;/div&gt;
 );</pre
           >
         </code>
@@ -318,18 +318,18 @@ const element = &lt;h1&gt;{title}&lt;/h1&gt;;</pre
         <code>
           <pre>
 const element = (
-&lt;h1 className="greeting"&gt;
-  Hello, world!
-&lt;/h1&gt;
+  &lt;h1 className="greeting"&gt;
+    Hello, world!
+  &lt;/h1&gt;
 );</pre
           >
         </code>
         <code>
           <pre>
 const element = React.createElement(
-'h1',
-{className: 'greeting'},
-'Hello, world!'
+  'h1',
+  {className: 'greeting'},
+  'Hello, world!'
 );</pre
           >
         </code>
@@ -341,11 +341,11 @@ const element = React.createElement(
           <pre>
 // Note: this structure is simplified
 const element = {
-type: 'h1',
-props: {
-  className: 'greeting',
-  children: 'Hello, world!'
-}
+  type: 'h1',
+  props: {
+    className: 'greeting',
+    children: 'Hello, world!'
+  }
 };</pre
           >
         </code>
